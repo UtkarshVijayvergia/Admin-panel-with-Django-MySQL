@@ -7,6 +7,10 @@ from .filters import schedularFilter
 
 from django.db import transaction
 
+
+
+
+
 # Create your views here.
 
 def crud_view1(request):
@@ -28,24 +32,22 @@ def crud_view1(request):
     context = {'schedular_all':schedular_all, 'myFilter':myFilter, 'form':form}
     return render(request, 'crud/front.html', context)
 
+
+
 ###################################################################################################################3
-# def u_dash(request):
-#     return render(request, 'crud/u_dash.html')
 
 
+# def new_schedular(request):
+#     form = schedularForm()
 
+#     if request.method == 'POST':
+#         form = schedularForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('/crud')
 
-def new_schedular(request):
-    form = schedularForm()
-
-    if request.method == 'POST':
-        form = schedularForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/crud')
-
-    context = {'form':form}
-    return render(request, 'crud/schedular_form.html', context)
+#     context = {'form':form}
+#     return render(request, 'crud/schedular_form.html', context)
 
 
 def update_schedular(request, s):
@@ -113,6 +115,3 @@ def csvinput(request):#for bulk input code
 
 
 #/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-def qwerty(request):
-    return render(request, 'crud/qwerty.html')
