@@ -1,2 +1,6 @@
 # Django-CRUD-Filter-Bulk-Upload-functionalities
-CRUD (Create, Read, Update and Delete) , dynamic search filter and Bulk Upload in Django
+
+### Build with
+- [Django](https://docs.djangoproject.com/en/4.0/)
+- [MySQL](https://www.mysql.com/)
+- [Bootstrap](https://getbootstrap.com/)
