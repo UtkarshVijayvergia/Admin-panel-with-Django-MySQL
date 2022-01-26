@@ -1,4 +1,4 @@
-# Django-CRUD-Filter-Bulk-Upload-functionalities
+# Admin Panel with Django MySQL
 
 ### Build with
 - [Django](https://docs.djangoproject.com/en/4.0/)
